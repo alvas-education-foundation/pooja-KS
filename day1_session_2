@@ -1,0 +1,67 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled5.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyPIRppErWIrXPHGeL/ckYhq",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/alvas-education-foundation/pooja-KS/blob/master/day1_session_2\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "60YCyxZ0zmua",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 102
+        },
+        "outputId": "06b6106c-8139-4a42-a898-2866ecf2c634"
+      },
+      "source": [
+        "string=input(\"Enter string:\")\n",
+        "char=0\n",
+        "word=1\n",
+        "for i in string:\n",
+        "      char=char+1\n",
+        "      if(i==' '):\n",
+        "            word=word+1\n",
+        "print(\"Number of words in the string:\")\n",
+        "print(word)\n",
+        "print(\"Number of characters in the string:\")\n",
+        "print(char)"
+      ],
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter string:pooja03\n",
+            "Number of words in the string:\n",
+            "1\n",
+            "Number of characters in the string:\n",
+            "7\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
