@@ -1,0 +1,122 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled10.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyMq04jmOAO5Hhv+6Uv74NCo",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/alvas-education-foundation/pooja-KS/blob/master/day2_python\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "yVOly_H1Zh2t",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 54
+        },
+        "outputId": "c9faf166-f7f4-4fba-ee25-860262804ac7"
+      },
+      "source": [
+        "def multiple(m, n): \n",
+        "    a = range(n, (m * n)+1, n)   \n",
+        "    print(*a)   \n",
+        "m = 66\n",
+        "n = 3\n",
+        "multiple(m, n)"
+      ],
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "3 6 9 12 15 18 21 24 27 30 33 36 39 42 45 48 51 54 57 60 63 66 69 72 75 78 81 84 87 90 93 96 99 102 105 108 111 114 117 120 123 126 129 132 135 138 141 144 147 150 153 156 159 162 165 168 171 174 177 180 183 186 189 192 195 198\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "rS4uMg01Zt9Y",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "bd58db2a-2397-44b4-f951-c596169fbdc0"
+      },
+      "source": [
+        "nl=[]\n",
+        "for x in range(1000, 2000):\n",
+        "    if (x%7==0) and (x%5==0):\n",
+        "        nl.append(str(x))\n",
+        "print (','.join(nl))"
+      ],
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "1015,1050,1085,1120,1155,1190,1225,1260,1295,1330,1365,1400,1435,1470,1505,1540,1575,1610,1645,1680,1715,1750,1785,1820,1855,1890,1925,1960,1995\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "VD2V17ikZ1kh",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 119
+        },
+        "outputId": "c24fac39-4939-4f46-c9c0-d12031ef4288"
+      },
+      "source": [
+        "lower=int(input(\"Enter lower range limit:\"))\n",
+        "upper=int(input(\"Enter upper range limit:\"))\n",
+        "n=int(input(\"Enter the number to be divided by:\"))\n",
+        "for i in range(lower,upper+1):\n",
+        "    if(i%n==0):\n",
+        "        print(i)"
+      ],
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter lower range limit:10\n",
+            "Enter upper range limit:20\n",
+            "Enter the number to be divided by:5\n",
+            "10\n",
+            "15\n",
+            "20\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
