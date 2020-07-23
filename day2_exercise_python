@@ -3,9 +3,9 @@
   "nbformat_minor": 0,
   "metadata": {
     "colab": {
-      "name": "Untitled6.ipynb",
+      "name": "Untitled8.ipynb",
       "provenance": [],
-      "authorship_tag": "ABX9TyNDLeC0I3fd9Vz1VML6/i+N",
+      "authorship_tag": "ABX9TyORlhkxGcwhMOveOlitaUbp",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -27,28 +27,38 @@
     {
       "cell_type": "code",
       "metadata": {
-        "id": "Z0WDHoz70gW5",
+        "id": "Zzk4NtwCDRym",
         "colab_type": "code",
         "colab": {
           "base_uri": "https://localhost:8080/",
-          "height": 54
+          "height": 136
         },
-        "outputId": "df601f6f-287e-4e15-80c6-fcb87bfec0c7"
+        "outputId": "e31ab6b8-1002-4ac2-da47-55782b5a380c"
       },
       "source": [
-        "def multiple(m, n): \n",
-        "    a = range(n, (m * n)+1, n)   \n",
-        "    print(*a)   \n",
-        "m = 66\n",
-        "n = 3\n",
-        "multiple(m, n)"
+        "n=int(input(\"Enter no of records\"))\n",
+        "d={}\n",
+        "import operator\n",
+        "for i in range(1,n+1):\n",
+        "  name= input(\"Enter name %d\"%(i))\n",
+        "  mark=int(input(\"Enter mark %d\"%(i)))\n",
+        "  d[name]=mark\n",
+        "print(\"input: \",d)\n",
+        "sorted_a= sorted(d.items(), key=operator.itemgetter(1),reverse=True)\n",
+        "print(\"output: \",sorted_a)"
       ],
-      "execution_count": 7,
+      "execution_count": 8,
       "outputs": [
         {
           "output_type": "stream",
           "text": [
-            "3 6 9 12 15 18 21 24 27 30 33 36 39 42 45 48 51 54 57 60 63 66 69 72 75 78 81 84 87 90 93 96 99 102 105 108 111 114 117 120 123 126 129 132 135 138 141 144 147 150 153 156 159 162 165 168 171 174 177 180 183 186 189 192 195 198\n"
+            "Enter no of records2\n",
+            "Enter name 1POOJA\n",
+            "Enter mark 199\n",
+            "Enter name 2HARI\n",
+            "Enter mark 234\n",
+            "input:  {'POOJA': 99, 'HARI': 34}\n",
+            "output:  [('POOJA', 99), ('HARI', 34)]\n"
           ],
           "name": "stdout"
         }
@@ -57,27 +67,38 @@
     {
       "cell_type": "code",
       "metadata": {
-        "id": "h76Sq46Z04w1",
+        "id": "kyEXgK3pDyHN",
         "colab_type": "code",
         "colab": {
           "base_uri": "https://localhost:8080/",
-          "height": 34
+          "height": 136
         },
-        "outputId": "f8afb29c-9291-4079-e4c8-a43446e5501d"
+        "outputId": "08fdd03f-d3b2-4f14-bf7f-c1499bf87704"
       },
       "source": [
-        "nl=[]\n",
-        "for x in range(1000, 2000):\n",
-        "    if (x%7==0) and (x%5==0):\n",
-        "        nl.append(str(x))\n",
-        "print (','.join(nl))"
+        "n=int(input(\"Enter no of records\"))\n",
+        "d={}\n",
+        "import operator\n",
+        "for i in range(1,n+1):\n",
+        "  name= input(\"Enter name %d\"%(i))\n",
+        "  s=float(input(\"Enter salary %d\"%(i)))\n",
+        "  d[name]=s\n",
+        "print(\"input: \",d)\n",
+        "sorted_a= sorted(d.items(), key=operator.itemgetter(0))\n",
+        "print(\"output: \",sorted_a)"
       ],
-      "execution_count": 8,
+      "execution_count": 9,
       "outputs": [
         {
           "output_type": "stream",
           "text": [
-            "1015,1050,1085,1120,1155,1190,1225,1260,1295,1330,1365,1400,1435,1470,1505,1540,1575,1610,1645,1680,1715,1750,1785,1820,1855,1890,1925,1960,1995\n"
+            "Enter no of records2\n",
+            "Enter name 1POOJA\n",
+            "Enter salary 1100000\n",
+            "Enter name 2HARI\n",
+            "Enter salary 220\n",
+            "input:  {'POOJA': 100000.0, 'HARI': 20.0}\n",
+            "output:  [('HARI', 20.0), ('POOJA', 100000.0)]\n"
           ],
           "name": "stdout"
         }
